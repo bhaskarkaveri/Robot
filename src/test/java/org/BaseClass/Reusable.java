@@ -13,8 +13,8 @@ public class Reusable{
 static WebDriver driver;
 
 public static void launch (String s) {
-System.setProperty("webdriver.ie.driver", "D:\\base project\\RobotManager\\Browsers\\IEDriverServer.exe");
- driver=new InternetExplorerDriver();
+System.setProperty("webdriver.chrome.driver", "D:\\base project\\RobotManager\\Browsers\\chromedriver.exe");
+ driver=new ChromeDriver();
 driver.get(s);}
 public static void pass(WebElement w,String s) {
 w.sendKeys(s);
