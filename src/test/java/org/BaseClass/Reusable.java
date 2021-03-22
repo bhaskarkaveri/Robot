@@ -20,23 +20,19 @@ w.sendKeys(s);
 public static void button(WebElement w) {
 	w.click();
 }
-public static void maxize() {
+public static void maximize() {
 	getDriver().manage().window().maximize();
 }
 public static void text(WebElement w) {
 	String t = w.getText();
-	
 	System.out.println(t);
-
-
 }
 public static WebDriver getDriver() {
 	return driver;
 }
-public static void setDriver(WebDriver driver) {
-	Reusable.driver = driver;
+
 }
-}
+
   
 
 

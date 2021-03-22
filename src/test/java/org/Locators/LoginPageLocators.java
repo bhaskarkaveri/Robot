@@ -1,26 +1,18 @@
 package org.Locators;
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.google.common.base.Predicate;
-
 import org.BaseClass.Reusable;
-
 import org.openqa.selenium.support.PageFactory;
-
 import cucumber.api.java.en.Given;
 
 public class LoginPageLocators extends Reusable {
 	
 	public  LoginPageLocators() {
 		PageFactory.initElements(getDriver(), this);
-		
-
-	}
+		}
 
 	@FindBy(id="emailID")
 	private WebElement user;
@@ -30,10 +22,8 @@ public class LoginPageLocators extends Reusable {
 	
 	@FindBy(xpath="//button[@class='login-btn mat-button']")
 	private List<WebElement> submit;
-
 	
-
-	public WebElement getUser() {
+  public WebElement getUser() {
 		return user;
 	}
 
