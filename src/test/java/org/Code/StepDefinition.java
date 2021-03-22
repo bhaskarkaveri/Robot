@@ -4,12 +4,10 @@ import org.BaseClass.Reusable;
 import org.Locators.LoginPageLocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 
 public class StepDefinition extends Reusable {
 	@Given("user navigates to RobotManager")

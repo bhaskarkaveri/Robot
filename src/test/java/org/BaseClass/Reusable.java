@@ -1,12 +1,9 @@
 package org.BaseClass;
-import java.util.List;
-import java.util.Stack;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+
+
 
 public class Reusable{
 
@@ -23,7 +20,7 @@ w.sendKeys(s);
 public static void button(WebElement w) {
 	w.click();
 }
-public static void maxi() {
+public static void maxize() {
 	getDriver().manage().window().maximize();
 }
 public static void text(WebElement w) {
