@@ -5,14 +5,16 @@ import java.util.Stack;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Reusable{
 
 static WebDriver driver;
 
 public static void launch (String s) {
-System.setProperty("webdriver.chrome.driver", "D:\\base project\\RobotManager\\Drivers\\chromedriver.exe\\");
- driver=new ChromeDriver();
+System.setProperty("webdriver.ie.driver", "D:\\base project\\RobotManager\\Browsers\\IEDriverServer.exe");
+ driver=new InternetExplorerDriver();
 driver.get(s);}
 public static void pass(WebElement w,String s) {
 w.sendKeys(s);
